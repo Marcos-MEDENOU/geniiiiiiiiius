@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com" defer></script> -->
+  <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js" defer></script>
+  <script src="ressources/js/tailwind/tailwind.js"></script>
+  <link rel="shortcut icon" href="ressources/images/web.svg" />
+  <link href='ressources/css/froola.css' rel='stylesheet' type='text/css' />
+  <title>Genius</title>
+
+  <style>
+    .App-logo {
+      pointer-events: none;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .App-logo {
+        animation: App-logo-spin infinite 10s linear;
+      }
+    }
+
+
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+</head>
+<main>
+
+  <div class="flex w-screen">
+    <aside>
+      <?php
+      
+      $page= "articles";
+   
+        include_once "../App/Views/admin/partials/navbar/nav-left.phtml";
+        ?>
+    </aside>
+
+    <div class="w-full flex flex-col">
+      <div>
+        <header class="">
+          <?php
+            include_once "../App/Views/admin/partials/navbar/nav-top.phtml"
+            ?>
+        </header>
+        <div class="sample">
+
+
+
+
+
+        
+
+
+        <div class="bg-white max-w-full pt-12 pr-0 pb-12 pl-0 mt-0 mr-auto mb-0 ml-auto sm:py-16 lg:py-20">
+  <div class="pt-0 pr-4 pb-0 pl-4 mt-0 mr-auto mb-0 ml-auto max-w-full sm:px-6 lg:px-8">
+    <div class="pt-0 pr-4 pb-0 pl-4 mt-0 mr-auto mb-0 ml-auto max-w-full sm:px-6 lg:px-8">
+      <!-- <div class="pt-0 pr-4 pb-0 pl-4 mt-0 mr-auto mb-0 ml-auto sm:flex sm:items-center sm:justify-between"> -->
+      <!-- <button class="text-w-800 px-6 py-2 transition ease-in duration-200 uppercase rounded-full hover:bg-orange-800 hover:text-white border-2 border-gray-900 focus:outline-none">Ajouter un article</button></div> -->
+        <button class="bg-orange-700 pt-2 pr-6 pb-2 pl-6 text-lg font-medium text-white transition-all
+                    duration-200 hover:bg-gray-700 rounded-lg">Supprimer</button>
+        <button class="bg-orange-700 pt-2 pr-6 pb-2 pl-6 text-lg font-medium text-white transition-all
+                    duration-200 hover:bg-gray-700 rounded-lg">Modifier</button>
+        <button class="bg-orange-700 pt-2 pr-6 pb-2 pl-6 text-lg font-medium text-white transition-all
+                    duration-200 hover:bg-gray-700 rounded-lg">Tout cocher</button>
+                   
+  
+
+      <div class="shadow-xl mt-8 mr-0 mb-0 ml-0 pt-4 pr-10 pb-4 pl-10 flow-root rounded-lg sm:py-2">
+        <div class="pt--10 pr-0 pb-10 pl-0">
+          <div class="pt-5 pr-0 pb-0 pl-0 mt-5 mr-0 mb-0 ml-0">
+            <div class="sm:flex sm:items-center sm:justify-between sm:space-x-5">
+              <div class="flex items-center flex-1 min-w-0">
+                <p>
+                  <input type="checkbox" name="" id="" class="w-[5rem] mr-">
+                </p>
+                <img
+                    src="ressources/images/web.svg" class="flex-shrink-0 object-cover rounded-full btn- w-10 h-10"/>
+                <div class="mt-0 mr-0 mb-0 ml-4 flex-1 min-w-0">
+                  <p class="text-lg font-bold text-gray-800 truncate mb-2 p-2 w[50%k]" 
+                  >Titre</p>
+                  
+                  <div class="flex">
+                  <!-- <p class="text-gray-600 text-md">Genius</p> -->
+                  <p class="text-gray-600 text-md ml-2"> 
+                  <div> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg></div> <div class="ml-2 mr-3">0 vues</div>
+
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.625 9.75a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375m-13.5 3.01c0 1.6 1.123 2.994 2.707 3.227 1.087.16 2.185.283 3.293.369V21l4.184-4.183a1.14 1.14 0 01.778-.332 48.294 48.294 0 005.83-.498c1.585-.233 2.708-1.626 2.708-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z" />
+                    </svg>
+                         <div class="ml-1">0 comments</div>
+
+                         <div class="ml-2">
+                            <select name="categorie" id="categorie">
+                                <option value="defaut">Choisir une categorie d'article</option>
+                                <?php foreach($allCategories as $key => $values) : ?>
+                                <option value=<?=$values["category_id"]?>> <?=$values["category_name"]?></option>
+                                <?php endforeach; ?>
+                                
+                            </select>
+                         </div>
+                  </div>
+                  
+                 
+                  
+                </div>
+              </div>
+              <div class="mt-4 mr-0 mb-0 ml-0 pt-0 pr-0 pb-0 pl-14 flex items-center sm:space-x-6 sm:pl-0 sm:mt-0">
+                <a href="" class="bg-orange-700 pt-2 pr-6 pb-2 pl-6 text-lg font-medium text-white transition-all
+                    duration-200 hover:bg-gray-700 rounded-lg">Editer l'article</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+</main>

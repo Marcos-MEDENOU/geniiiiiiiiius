@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <title>Simple Open House</title>
+    <meta name="description" content="A must-have tool for every Realtor to Get and Manage leads from Open House. Why should a single lead be wasted, every Realtor deserves business from Open Houses they've hosted. ">
+    <link href="/Content/css?v=81iWYsOMLO0IHESgJnlKNxbLOQv8bVC_dFvSbb_QdCM1" rel="stylesheet"/>
+
+    <script src="/bundles/modernizr?v=inCVuEFe6J4Q07A0AcRsbJic_UE5MwpRMNGcOtk94TE1"></script>
+
+    <link rel="stylesheet" href="/Content/bootstrap.min.css">
+    <link rel="stylesheet" href="/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900">
+    <link rel="stylesheet" href="/Content/Footer-Basic.css">
+    <link rel="stylesheet" href="/Content/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="/Content/Bootstrap_SOH_theme.css">
+    <link rel="stylesheet" href="/Content/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+
+    <script src="/Scripts/jquery-3.5.1.min.js"></script>
+    <script src="/bundles/jquery?v=8Oos0avDZyPg-cbyVzvkIfERIE1DGSe3sRQdCSYrgEQ1"></script>
+
+    
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <script src="/bundles/bootstrap?v="></script>
+
+    <script src="/Scripts/jstz-1.0.4.min.js"></script>
+    <script src="/Scripts/sweetAlert2/sweetalert2.all.min.js"></script>
+    <script src="/Scripts/sweetAlert2/sweetalert2.min.js"></script>
+    <link href="/Content/sweetAlert2/sweetalert2.min.css" rel="stylesheet" />
+    <script src="/Scripts/SOHJS.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '753885811786338');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+             src="https://www.facebook.com/tr?id=753885811786338&ev=PageView&noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+
+</head>
+<body>
+
+<section id="menuSection" class="menuSection" style="background-color:#651bc8;">
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top" style="background-color: #651bc8">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="https://sohdata.com">Simple Open House</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse"
+                 id="navcol-1">
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html">HOME</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html#SectionTwo">FEATURES</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html#sneekPeak">SNEEK PEAK</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/index.html#plans">PLANS</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Home/Learn">HOW TO</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Home/Support">SUPPORT</a></li>
+                </ul>
+                <ul class="nav navbar-nav">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Home/Register">REGISTER</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="/Home/Login">LOGIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+    
+    <div class="container body-content" style="padding-top:30px">
+        
+
+
+
+    <h2 class="text-primary">REGISTRATION</h2>
+
+<div>
+    <p class="lead">Registration is simple,</p>
+
+    <ul class="">
+        <li>
+            Step1: Install and Open the <span class="text-primary"> Simple Open House</span> from App Store
+        </li>
+        <li>
+            Step2: Click on the <span class="text-primary">Sign up</span> button
+        </li>
+    </ul>
+    <p class="lead text-danger">Note: The information you fill in the Registration page, will be used in the communications with your leads.</p>
+
+
+</div>
+
+<img class="img-fluid" src="/img/Registration.svg" />
+        <hr />
+
+    </div>
+    <div class="footer-basic">
+        <footer>
+            <div class="social"><a href="#"><i class="icon ion-social-instagram"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="https://www.facebook.com/simpleopenhouse/"><i class="icon ion-social-facebook"></i></a></div>
+            <ul class="list-inline"
+                style="color: #651bc8;">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="/Home/PPolicy">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="/Home/CookiePolicy">Cookie Policy</a></li>
+                
+
+            </ul>
+            <p id="cpyRight" class="copyright">TECHSENSE TECHNOLOGIES, LLC © 2019</p>
+        </footer>     
+    </div>
+
+
+    <script src="/Scripts/bootstrap-better-nav.min.js"></script>
+
+
+
+
+    <script>
+
+        $(document).ready(function () {
+            //Convert address tags to google map links - Michael Jasper 2012
+            $('address').each(function () {
+                var link = "<a class='lead text-primary' style='text-decoration:none; font-weight:400' href='http://maps.google.com/maps?q=" + encodeURIComponent($(this).text()) + "' target='_blank'>" + $(this).text() + "</a>";
+                $(this).html(link);
+            });
+
+            // Add copyright text
+            $('#cpyRight').html("TECHSENSE TECHNOLOGIES, LLC © " + (new Date).getFullYear());
+
+
+            // Set Timezome in the session variable
+            var zone = new Date().toLocaleTimeString('en-us', { timeZoneName: 'short' }).split(' ')[2];
+            var zoneLong = new Date().toLocaleTimeString('en-us', { timeZoneName: 'short' });
+            var dt = new Date();
+            var yyyymmdd_Date = "";
+            yyyymmdd_Date += formatdigits(dt.getFullYear());
+            yyyymmdd_Date += formatdigits(dt.getMonth() + 1);
+            yyyymmdd_Date += formatdigits(dt.getDate());
+
+
+            var yyyymmdd_DateTime = "";
+            yyyymmdd_DateTime += formatdigits(dt.getMonth() + 1);
+            yyyymmdd_DateTime += formatdigits(dt.getDate());
+            yyyymmdd_DateTime += formatdigits(dt.getFullYear());
+            yyyymmdd_DateTime += formatdigits(dt.getHours() > 12 ? dt.getHours() - 12 : dt.getHours());
+            yyyymmdd_DateTime += formatdigits(dt.getMinutes());
+            yyyymmdd_DateTime += formatdigits(dt.getSeconds());
+            yyyymmdd_DateTime += dt.getHours() > 11 ? "PM" : "AM";
+
+            // Set environment variables
+            $.ajax({
+                type: "POST",
+                url: '/Home/SetClientsideValues',
+                data: { TZValue: zone, LongTZValue: zoneLong, YYYYMMDD_Date: yyyymmdd_Date, YYYYMMDDHHMMSSTT_Date: yyyymmdd_DateTime },
+                success: function (response) {
+                    //$('#tmpDv').html("IN AJAX " + (new Date).toString());
+                }
+            });
+        });
+
+
+            // For AniTextbox
+        $(function () {
+            $('.aniInputGrp input').focusout(function () {
+                var text_val = $(this).val();
+                if (text_val === '') {
+                    $(this).removeClass('has-value');
+                } else {
+                    $(this).addClass('has-value');
+                }
+            });
+        });
+
+        //// For adding spinner in the button
+        (function ($) {
+            $.fn.button = function (action) {
+                if (this.length > 0) {
+                    this.each(function () {
+                        if (action === 'loading' && $(this).data('loading-text')) {
+                            $(this).data('original-text', $(this).html()).html($(this).data('loading-text')).prop('disabled', true);
+                        } else if (action === 'reset' && $(this).data('original-text')) {
+                            $(this).html($(this).data('original-text')).prop('disabled', false);
+                        }
+                    });
+                }
+            };
+        }(jQuery));
+
+        function add_months(dt, n) {
+            return new Date(dt.setMonth(dt.getMonth() + n));
+        }
+
+        function getYYYYMMDDDate(dt) {
+            var res = "";
+            res += formatdigits(dt.getFullYear());
+            res += formatdigits(dt.getMonth() + 1);
+            res += formatdigits(dt.getDate());
+            return res;
+        }
+
+        function getMMDDYYYYDate(dt) {
+            var res = "";
+            res += formatdigits(dt.getMonth() + 1);
+            res += "/";
+            res += formatdigits(dt.getDate());
+            res += "/";
+            res += formatdigits(dt.getFullYear());
+            return res;
+        }
+
+        function getMMDDYYYYDatetimeNoDiv(dt) {
+            var res = "";
+            res += formatdigits(dt.getMonth() + 1);
+            res += formatdigits(dt.getDate());
+            res += formatdigits(dt.getFullYear());
+            res += formatdigits(dt.getHours() > 12 ? dt.getHours() - 12 : dt.getHours());
+            res += formatdigits(dt.getMinutes());
+            res += formatdigits(dt.getSeconds());
+            res += dt.getHours() > 11 ? "PM" : "AM";
+            return res;
+        }
+
+        function getMMDDYYYYDatetime(dt) {
+            var res = "";
+            res += formatdigits(dt.getMonth() + 1);
+            res += "/";
+            res += formatdigits(dt.getDate());
+            res += "/";
+            res += formatdigits(dt.getFullYear());
+            res += " ";
+            res += formatdigits(dt.getHours() > 12 ? dt.getHours() - 12 : dt.getHours());
+            res += ":";
+            res += formatdigits(dt.getMinutes());
+            res += " " + dt.getHours() > 11 ? " PM" : " AM";
+            return res;
+        }
+
+        function gettime(dt) {
+            var res = "";
+            res += formatdigits(dt.getHours() > 12 ? dt.getHours() - 12 : dt.getHours());
+            res += ":";
+            res += formatdigits(dt.getMinutes());
+            res += ":";
+            res += formatdigits(dt.getSeconds());
+            res += " " + dt.getHours() > 11 ? " PM" : " AM";
+            return res;
+        }
+        function gettimeHHSS(dt) {
+            var res = "";
+            res += formatdigits(dt.getHours() > 12 ? dt.getHours() - 12 : dt.getHours());
+            res += ":";
+            res += formatdigits(dt.getMinutes());
+            res += " " + dt.getHours() > 11 ? " PM" : " AM";
+            return res;
+        }
+        function formatdigits(val) {
+            val = val.toString();
+            return val.length == 1 ? "0" + val : val;
+        }
+
+        // Mautic tracking on google console
+        (function (w, d, t, u, n, a, m) {
+        w['MauticTrackingObject'] = n;
+            w[n] = w[n] || function () { (w[n].q = w[n].q || []).push(arguments) }, a = d.createElement(t),
+                m = d.getElementsByTagName(t)[0]; a.async = 1; a.src = u; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'http://35.209.201.186/mail/index.php/mtc.js', 'mt');
+
+        mt('send', 'pageview');
+
+    </script>
+</body>
+</html>

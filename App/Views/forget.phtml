@@ -1,0 +1,83 @@
+<?php include_once("../App/Views/components/header.php")?>
+<body>
+
+		<div class="bg-white relative lg:py-24">
+  <div class="flex flex-col items-center justify-between pt-0 pr-10 pb-0 pl-10 mt-0 mr-auto mb-0 ml-auto max-w-7xl
+      xl:px-5 lg:flex-row">
+    <div class="flex flex-col items-center w-full pt-5 pr-10 pb-20 pl-10 lg:pt-20 lg:flex-row">
+      <div class="w-full bg-cover relative max-w-md lg:max-w-2xl lg:w-7/12">
+        <div class="flex flex-col items-center justify-center w-full h-full relative lg:pr-10">
+          <img src="ressources/images/sign_in2_page.svg" class="btn-"/>
+        </div>
+      </div>
+      <div class="w-full mt-20 mr-0 mb-0 ml-0 relative z-10 max-w-2xl lg:mt-0 lg:w-5/12" id="email">
+        <div class="flex flex-col items-start justify-start pt-10 pr-10 pb-10 pl-10 bg-white shadow-2xl rounded-xl
+            relative z-10">
+          <p class="w-full text-4xl font-medium text-center leading-snug font-serif">Entrez votre email</p>
+          <div class="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8">
+          
+            <div class="relative">
+              <p class="bg-white pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute">Email</p>
+              <input placeholder="123@ex.com" type="email" class="border placeholder-gray-400 focus:outline-none
+                  focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white
+                  border-gray-300 rounded-md" id="useremail" name="useremail"/>
+            </div>
+            <div class="relative">
+              <button class="h-12 w-3/10 justify-center inline-block pt-2 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-orange-700
+                  rounded-lg transition duration-200 hover:bg-orange-600 ease" id="validation_email">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div class="w-full mt-20 mr-0 mb-0 ml-0 relative z-10 max-w-2xl lg:mt-0 lg:w-5/12" id="code">
+        <div class="flex flex-col items-start justify-start pt-10 pr-10 pb-10 pl-10 bg-white shadow-2xl rounded-xl
+            relative z-10">
+          <p class="w-full text-4xl font-medium text-center leading-snug font-serif">Entrez le code</p>
+          <div class="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8">
+          
+            <div class="relative">
+              <p class="bg-white pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute">Code email</p>
+              <input placeholder="123456" type="text" class="border placeholder-gray-400 focus:outline-none
+                  focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white
+                  border-gray-300 rounded-md" id="email_code" name="email_code"/>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w-full mt-20 mr-0 mb-0 ml-0 relative z-10 max-w-2xl lg:mt-0 lg:w-5/12" id="pwd">
+        <div class="flex flex-col items-start justify-start pt-10 pr-10 pb-10 pl-10 bg-white shadow-2xl rounded-xl
+            relative z-10">
+          <p class="w-full text-4xl font-medium text-center leading-snug font-serif">Changez votre mot de passe</p>
+          <div class="w-full mt-6 mr-0 mb-0 ml-0 relative space-y-8">
+          
+            <div class="relative">
+              <p class="bg-white pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute">Password</p>
+              <input placeholder="******************" type="password" class="border placeholder-gray-400 focus:outline-none
+                  focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white
+                  border-gray-300 rounded-md" id="mdp" name="mdp"/>
+            </div>
+            <div class="relative">
+              <p class="bg-white pt-0 pr-2 pb-0 pl-2 -mt-3 mr-0 mb-0 ml-2 font-medium text-gray-600 absolute">Confirm Password</p>
+              <input placeholder="******************" type="password" class="border placeholder-gray-400 focus:outline-none
+                  focus:border-black w-full pt-4 pr-4 pb-4 pl-4 mt-2 mr-0 mb-0 ml-0 text-base block bg-white
+                  border-gray-300 rounded-md" id="new_mdp" name="new_mdp"/>
+            </div>
+            <div class="relative">
+              <button class="h-12 w-3/10 justify-center inline-block pt-2 pr-5 pb-4 pl-5 text-xl font-medium text-center text-white bg-orange-700
+                  rounded-lg transition duration-200 hover:bg-orange-600 ease" id="validation_password">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<?php include_once("../App/Views/components/footer.php")?>
+
+<script src="/ressources/js/forget.js"></script>
+</body>
+</html>

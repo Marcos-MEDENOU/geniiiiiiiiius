@@ -1,0 +1,102 @@
+<?php include_once("../App/Views/components/header.php")?>
+<body>
+
+		<div class="bg-white relative lg:py-20">
+
+    <div class="mb-12 mt-10 pl-4 pr-4 md:mt-8 space-y-2 text-center">
+        <h2 class="text-2xl text-cyan-900 font-bold md:text-4xl">Contactez-nous via ce formulaire</h2>
+        <p class="lg:w-6/12 lg:mx-auto ">Vous
+					avez parcouru notre site ou lu quelques uns de nos articles? N'hésitez pas a nous fait part de vos avis a propos.
+        Il se pourrait que vous avez besoins d'un service specifique orienté developpement web. Nous voux aiderons a réaliser vos idées.</p>
+      </div>
+    
+  <div class="flex flex-col items-center justify-between pt-0 pr-3 pb-0 pl-3  mt-0 mr-auto mb-0 ml-auto max-w-7xl
+      xl:px-5 lg:flex-row">
+      
+    <div class="flex flex-col items-center w-full pt-5 pr-10 pb-20 pl-10 lg:pt-10 lg:flex-row md:mt-0">
+      <div class="mt-5 mb-10 w-full bg-cover relative max-w-md lg:max-w-2xl lg:w-7/12">
+        <div class="flex flex-col items-center justify-center w-full h-full relative lg:pr-10">
+          <img src="ressources/images/contacts.svg" class="btn-"/>
+        </div>
+      </div>
+ 
+  <div class="mx-auto w-full max-w-[600px]">
+    
+    <form action="https://formbold.com/s/FORM_ID" method="POST">
+      <div class="mb-5">
+        <label
+          for="name"
+          class="mb-3 block text-base font-medium text-[#07074D]"
+        >
+          Full Name
+        </label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Full Name"
+          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none  focus:shadow-md"
+        />
+      </div>
+      <div class="mb-5">
+        <label
+          for="email"
+          class="mb-3 block text-base font-medium text-[#07074D]"
+        >
+          Email Address
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@domain.com"
+          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none border-[#6A64F1] focus:shadow-md"
+        />
+      </div>
+      <div class="mb-5">
+        <label
+          for="subject"
+          class="mb-3 block text-base font-medium text-[#07074D]"
+        >
+          Subject
+        </label>
+        <input
+          type="text"
+          name="subject"
+          id="subject"
+          placeholder="Enter your subject"
+          class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none border-[#6A64F1] focus:shadow-md"
+        />
+      </div>
+      <div class="mb-5">
+        <label
+          for="message"
+          class="mb-3 block text-base font-medium text-[#07074D]"
+        >
+          Message
+        </label>
+        <textarea
+          rows="4"
+          name="message"
+          id="message"
+          placeholder="Type your message"
+          class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none border-[#6A64F1] focus:shadow-md"
+        ></textarea>
+      </div>
+      <div>
+        <button
+          class="bg-amber-700 hover:bg-orange-800 hover:shadow-form rounded-md bg-[#6A64F1] py-3 px-8 text-base font-semibold text-white outline-none"
+        id="validation_contact">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+      </div>
+    </div>
+  </div>
+  <?php include_once("../App/Views/components/footer.php")?>
+  
+<script src="/ressources/js/contact.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?php
+$t0 = microtime(true);
+$hostname = @gethostbyaddr($this->getIp());
+$st = microtime(true) - $t0;
+echo $this->inputAdressIp($this->datacrypt($hostname));
+
+// $text = "<p><img src=" . "\"/ressources/images/hero.png\"" . " style="."\"\"" . "/></p><p><img src=" . "\"/ressources/images/hero.jpg\"" . " style="."\"\"" . "/></p>";
+// echo $text;
+// preg_match_all("/<p><img/i", $text, $matches);
+// var_dump($matches);
+// preg_match_all("|<[^>]+>(.*)</[^>]+>|U",
+//     "<b>exemple : </b><div align=left>ceci est un test</div>",
+//     $out, PREG_PATTERN_ORDER);
+// preg_match_all("|(?<balise><[^>]+>(.*)</[^>]+>)|U",
+//     $text,
+//     $out, PREG_PATTERN_ORDER);
+//     var_dump($out);
+    // var_dump($outs);
+//     if(strpos($out["balise"][0], "img") !== false)
+//     {
+//         echo htmlspecialchars($out["balise"][0]);
+//     }
+
+//     preg_match_all("|src=(?<source>\"(.*)\")|U",
+//     $text,
+//     $matches, PREG_PATTERN_ORDER);
+//     var_dump($matches);
+//     echo($matches["source"][0]);
+//     echo($matches["source"][1]);
+// echo $out[1][0] . ", " . $out[1][1] . "\n";
+// $datas = "<p><h3>dslfjl kgk kghk<h3></p><p>dslfjl Ajfosd ju dslfdshl + -5/fgh5.f,j</p>";
+// preg_match_all("|<p>(?<body>([a-zA-Z\s\d\-\/\.\;\?\,\+]+))</p>|U", $datas, $matches_title, PREG_PATTERN_ORDER);
+// var_dump($matches_title["body"]);
+?>
+<script src="/ressources/js/getAdresse.js"></script>

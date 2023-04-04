@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com" defer></script> -->
+  <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js" defer></script>
+  <script src="ressources/js/tailwind/tailwind.js"></script>
+  <link rel="shortcut icon" href="ressources/images/web.svg" />
+  <link href='ressources/css/froola.css' rel='stylesheet' type='text/css' />
+  <title>Genius</title>
+
+  <style>
+    .App-logo {
+      pointer-events: none;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .App-logo {
+        animation: App-logo-spin infinite 10s linear;
+      }
+    }
+
+
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+</head>
+<main>
+
+  <div class="flex w-screen">
+    <aside>
+      <?php
+      
+      $page= "editor";
+   
+        include_once "../App/Views/admin/partials/navbar/nav-left.phtml";
+        ?>
+    </aside>
+
+    <div class="w-full flex flex-col">
+      <div>
+        <header class="">
+          <?php
+            include_once "../App/Views/admin/partials/navbar/nav-top.phtml"
+            ?>
+        </header>
+        <div class="sample">
+
+        <?php
+       
+            include_once "../App/Views/admin/admin_components/editor_panel.phtml"
+            ?>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+</main>
+
+<script type='text/javascript' src='ressources/js/editor/froola.js'></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script> -->
+<script>
+  //froala instanciate
+  let res = new FroalaEditor('#example', {
+
+    // Set the image upload parameter.
+    imageUploadParam: 'file',
+
+    // // Set the image upload URL.
+    imageUploadURL: '/?goto=<?=$this->datacrypt('ArticlesUploads')?>&action=<?=$this->datacrypt('Send')?>',
+
+    // Additional upload params.
+    imageUploadParams: { id: 'file_upload' },
+
+    // Set request type.
+    imageUploadMethod: 'POST',
+
+    // Set max image size to 5MB.
+    imageMaxSize: 5 * 1024 * 1024,
+
+    // Allow to upload PNG and JPG.
+    imageAllowedTypes: ['jpeg', 'jpg', 'png', 'gif', 'svg'],
+
+    events: {
+
+      // 'froalaEditor.html.get': function (e, editor) {
+      //     if (editor.codeView.isActive()) {
+      //         return editor.codeView.get();
+      //     }
+      // };
+
+      'image.beforeUpload': function (images) {
+        // Return false if you want to stop the image upload.
+        //console.log(res.html.get())
+      },
+      'image.uploaded': function (response) {
+        // Image was uploaded to the server.
+
+      },
+      'image.inserted': function ($img, response) {
+        // Image was inserted in the editor.
+      },
+      'image.replaced': function ($img, response) {
+        // Image was replaced in the editor.
+      },
+      'image.error': function (error, response) {
+        // Bad link.
+        if (error.code == 1) { }
+
+        // No link in upload response.
+        else if (error.code == 2) { }
+
+        // Error during image upload.
+        else if (error.code == 3) { }
+
+        // Parsing response failed.
+        else if (error.code == 4) { }
+
+        // Image too text-large.
+        else if (error.code == 5) { }
+
+        // Invalid image type.
+        else if (error.code == 6) { }
+
+        // Image can be uploaded only to same domain in IE 8 and IE 9.
+        else if (error.code == 7) { }
+
+        // Response contains the original server response to the request if available.
+      }
+    }
+  });
+
+
+  // let editor_html = new FroalaEditor('#froala-editor');
+
+  function getContent() {
+    let html = res.html.get();
+    console.log(html); // Output the HTML content to the console
+  }
+
+  document.getElementById("submit").addEventListener('click', getContent);
+
+
+
+</script>

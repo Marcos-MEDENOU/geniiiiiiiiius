@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- <script src="https://cdn.tailwindcss.com" defer></script> -->
+  <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js" defer></script>
+  <script src="ressources/js/tailwind/tailwind.js"></script>
+  <link rel="shortcut icon" href="ressources/images/web.svg" />
+  <link href='ressources/css/froola.css' rel='stylesheet' type='text/css' />
+  <title>Genius</title>
+
+  <style>
+    .App-logo {
+      pointer-events: none;
+    }
+
+    @media (prefers-reduced-motion: no-preference) {
+      .App-logo {
+        animation: App-logo-spin infinite 10s linear;
+      }
+    }
+
+
+    @keyframes App-logo-spin {
+      from {
+        transform: rotate(0deg);
+      }
+
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+
+</head>
+<main>
+
+  <div class="flex w-screen">
+    <aside>
+      <?php
+      $page = "category";
+      include_once "../App/Views/admin/partials/navbar/nav-left.phtml"; ?>
+    </aside>
+
+    <div class="w-full flex flex-col">
+      <div>
+        <header class="">
+          <?php include_once "../App/Views/admin/partials/navbar/nav-top.phtml" ?>
+        </header>
+        <div class="sample">
+          <?php include_once "../App/Views/admin/admin_components/category.phtml" ?>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+</main>
